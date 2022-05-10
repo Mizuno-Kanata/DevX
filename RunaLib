@@ -1,0 +1,335 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Top = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local filter_1 = Instance.new("ImageButton")
+local filter_2 = Instance.new("ImageButton")
+local filter_3 = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local Tab1 = Instance.new("ScrollingFrame")
+local UICorner_4 = Instance.new("UICorner")
+local Button1 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+local Tab2 = Instance.new("ScrollingFrame")
+local UICorner_5 = Instance.new("UICorner")
+local Button1_2 = Instance.new("TextButton")
+local Button2_2 = Instance.new("TextButton")
+local Tab3 = Instance.new("ScrollingFrame")
+local UICorner_6 = Instance.new("UICorner")
+local Button1_3 = Instance.new("TextButton")
+local Button2_3 = Instance.new("TextButton")
+
+--Properties:
+
+UI.Name = "UI"
+UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = UI
+Main.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Main.BorderColor3 = Color3.fromRGB(37, 37, 37)
+Main.Position = UDim2.new(0.389999986, 0, 0.31099999, 0)
+Main.Size = UDim2.new(0, 295, 0, 323)
+
+UICorner.Parent = Main
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Top.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Top.Size = UDim2.new(0, 295, 0, 30)
+
+UICorner_2.Parent = Top
+
+filter_1.Name = "filter_1"
+filter_1.Parent = Top
+filter_1.BackgroundTransparency = 1.000
+filter_1.Position = UDim2.new(0.0186440647, 0, 0.166666657, 0)
+filter_1.Size = UDim2.new(0, 20, 0, 20)
+filter_1.ZIndex = 2
+filter_1.Image = "rbxassetid://3926305904"
+filter_1.ImageRectOffset = Vector2.new(364, 484)
+filter_1.ImageRectSize = Vector2.new(36, 36)
+
+filter_2.Name = "filter_2"
+filter_2.Parent = Top
+filter_2.BackgroundTransparency = 1.000
+filter_2.Position = UDim2.new(0.130508482, 0, 0.166666538, 0)
+filter_2.Size = UDim2.new(0, 20, 0, 20)
+filter_2.ZIndex = 2
+filter_2.Image = "rbxassetid://3926305904"
+filter_2.ImageRectOffset = Vector2.new(364, 444)
+filter_2.ImageRectSize = Vector2.new(36, 36)
+
+filter_3.Name = "filter_3"
+filter_3.Parent = Top
+filter_3.BackgroundTransparency = 1.000
+filter_3.Position = UDim2.new(0.242372885, 0, 0.133333415, 0)
+filter_3.Size = UDim2.new(0, 20, 0, 20)
+filter_3.ZIndex = 2
+filter_3.Image = "rbxassetid://3926305904"
+filter_3.ImageRectOffset = Vector2.new(884, 444)
+filter_3.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel.Parent = Top
+TextLabel.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+TextLabel.BorderColor3 = Color3.fromRGB(29, 29, 29)
+TextLabel.Position = UDim2.new(0.667796612, 0, 0.0999999046, 0)
+TextLabel.Size = UDim2.new(0, 98, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Script Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+
+UICorner_3.Parent = TextLabel
+
+Tab1.Name = "Tab1"
+Tab1.Parent = Main
+Tab1.Active = true
+Tab1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Tab1.BorderColor3 = Color3.fromRGB(37, 37, 37)
+Tab1.Position = UDim2.new(0, 0, 0.0928792581, 0)
+Tab1.Size = UDim2.new(0, 295, 0, 293)
+Tab1.Visible = false
+Tab1.ScrollBarThickness = 5
+
+UICorner_4.Parent = Tab1
+
+Button1.Name = "Button1"
+Button1.Parent = Tab1
+Button1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button1.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button1.BorderSizePixel = 3
+Button1.Size = UDim2.new(0, 295, 0, 30)
+Button1.Font = Enum.Font.Arial
+Button1.Text = "Owl Hub"
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextSize = 20.000
+
+Button2.Name = "Button2"
+Button2.Parent = Tab1
+Button2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button2.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button2.BorderSizePixel = 3
+Button2.Position = UDim2.new(0, 0, 0.046439629, 0)
+Button2.Size = UDim2.new(0, 295, 0, 30)
+Button2.Font = Enum.Font.Arial
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextSize = 20.000
+
+Tab2.Name = "Tab2"
+Tab2.Parent = Main
+Tab2.Active = true
+Tab2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Tab2.BorderColor3 = Color3.fromRGB(37, 37, 37)
+Tab2.Position = UDim2.new(0, 0, 0.0928792581, 0)
+Tab2.Size = UDim2.new(0, 295, 0, 293)
+Tab2.Visible = false
+Tab2.ScrollBarThickness = 5
+
+UICorner_5.Parent = Tab2
+
+Button1_2.Name = "Button1"
+Button1_2.Parent = Tab2
+Button1_2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button1_2.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button1_2.BorderSizePixel = 3
+Button1_2.Size = UDim2.new(0, 295, 0, 30)
+Button1_2.Font = Enum.Font.Arial
+Button1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1_2.TextSize = 20.000
+
+Button2_2.Name = "Button2"
+Button2_2.Parent = Tab2
+Button2_2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button2_2.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button2_2.BorderSizePixel = 3
+Button2_2.Position = UDim2.new(0, 0, 0.046439629, 0)
+Button2_2.Size = UDim2.new(0, 295, 0, 30)
+Button2_2.Font = Enum.Font.Arial
+Button2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2_2.TextSize = 20.000
+
+Tab3.Name = "Tab3"
+Tab3.Parent = Main
+Tab3.Active = true
+Tab3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Tab3.BorderColor3 = Color3.fromRGB(37, 37, 37)
+Tab3.Position = UDim2.new(0, 0, 0.0928792581, 0)
+Tab3.Size = UDim2.new(0, 295, 0, 293)
+Tab3.Visible = false
+Tab3.ScrollBarThickness = 5
+
+UICorner_6.Parent = Tab3
+
+Button1_3.Name = "Button1"
+Button1_3.Parent = Tab3
+Button1_3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button1_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button1_3.BorderSizePixel = 3
+Button1_3.Size = UDim2.new(0, 295, 0, 30)
+Button1_3.Font = Enum.Font.Arial
+Button1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1_3.TextSize = 20.000
+
+Button2_3.Name = "Button2"
+Button2_3.Parent = Tab3
+Button2_3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Button2_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Button2_3.BorderSizePixel = 3
+Button2_3.Position = UDim2.new(0, 0, 0.046439629, 0)
+Button2_3.Size = UDim2.new(0, 295, 0, 30)
+Button2_3.Font = Enum.Font.Arial
+Button2_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2_3.TextSize = 20.000
+
+-- Scripts:
+
+local function CMYLJFY_fake_script() -- filter_1.LocalScript 
+	local script = Instance.new('LocalScript', filter_1)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.Main.Tab1.Visible = true
+		script.Parent.Parent.Parent.Parent.Main.Tab2.Visible = false
+		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = false
+	end)
+end
+coroutine.wrap(CMYLJFY_fake_script)()
+local function PLKKP_fake_script() -- filter_2.LocalScript 
+	local script = Instance.new('LocalScript', filter_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.Main.Tab1.Visible = false
+		script.Parent.Parent.Parent.Parent.Main.Tab2.Visible = true
+		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = false
+	end)
+end
+coroutine.wrap(PLKKP_fake_script)()
+local function CEGHEL_fake_script() -- filter_3.LocalScript 
+	local script = Instance.new('LocalScript', filter_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.Parent.Main.Tab1.Visible = false
+		script.Parent.Parent.Parent.Parent.Main.Tab2.Visible = false
+		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = true
+	end)
+end
+coroutine.wrap(CEGHEL_fake_script)()
+local function EHPZED_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(EHPZED_fake_script)()
+local function COKF_fake_script() -- Main.KeyBlind 
+	local script = Instance.new('LocalScript', Main)
+
+	local MainFrame = script.Parent.Parent.Main
+	local Opend = false
+	local PositionClosed = UDim2.new(0.39, 0,-0.5, 0)
+	local PositionOpened = UDim2.new(0.39, 0,0.311, 0)
+	
+	local UIS = game:GetService("UserInputService")
+	
+	UIS.InputBegan:Connect(function(Key)
+		if Key.KeyCode == Enum.KeyCode.Q then
+			if Opend then
+				MainFrame:TweenPosition((PositionClosed),"InOut","Quint")
+				Opend = false
+			else
+				MainFrame:TweenPosition((PositionOpened),"InOut","Quint")
+				Opend = true
+			end
+		end
+	end)
+end
+coroutine.wrap(COKF_fake_script)()
+local function UOHC_fake_script() -- Button1.LocalScript 
+	local script = Instance.new('LocalScript', Button1)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt", true))()
+	end)
+end
+coroutine.wrap(UOHC_fake_script)()
+local function IUGD_fake_script() -- Button2.LocalScript 
+	local script = Instance.new('LocalScript', Button2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	end)
+end
+coroutine.wrap(IUGD_fake_script)()
+local function GOTKXU_fake_script() -- Button1_2.LocalScript 
+	local script = Instance.new('LocalScript', Button1_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	end)
+end
+coroutine.wrap(GOTKXU_fake_script)()
+local function JMFKK_fake_script() -- Button2_2.LocalScript 
+	local script = Instance.new('LocalScript', Button2_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	end)
+end
+coroutine.wrap(JMFKK_fake_script)()
+local function RNJTD_fake_script() -- Button1_3.LocalScript 
+	local script = Instance.new('LocalScript', Button1_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	end)
+end
+coroutine.wrap(RNJTD_fake_script)()
+local function NGGMVYK_fake_script() -- Button2_3.LocalScript 
+	local script = Instance.new('LocalScript', Button2_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	
+	end)
+end
+coroutine.wrap(NGGMVYK_fake_script)()
