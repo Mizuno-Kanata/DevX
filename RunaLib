@@ -3,7 +3,6 @@
 
 -- Instances:
 
-local UI = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Top = Instance.new("Frame")
@@ -15,28 +14,24 @@ local TextLabel = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 local Tab1 = Instance.new("ScrollingFrame")
 local UICorner_4 = Instance.new("UICorner")
-local Button1 = Instance.new("TextButton")
-local Button2 = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
 local Tab2 = Instance.new("ScrollingFrame")
 local UICorner_5 = Instance.new("UICorner")
-local Button1_2 = Instance.new("TextButton")
-local Button2_2 = Instance.new("TextButton")
+local BreakingPoint = Instance.new("TextButton")
+local Entrenched = Instance.new("TextButton")
 local Tab3 = Instance.new("ScrollingFrame")
 local UICorner_6 = Instance.new("UICorner")
-local Button1_3 = Instance.new("TextButton")
-local Button2_3 = Instance.new("TextButton")
+local Troll1 = Instance.new("TextButton")
+local Troll2 = Instance.new("TextButton")
 
 --Properties:
 
-UI.Name = "UI"
-UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 Main.Name = "Main"
-Main.Parent = UI
+Main.Parent = game.StarterGui.UI
 Main.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 Main.BorderColor3 = Color3.fromRGB(37, 37, 37)
-Main.Position = UDim2.new(0.389999986, 0, 0.31099999, 0)
+Main.Position = UDim2.new(0.34796676, 0, 0.273601621, 0)
 Main.Size = UDim2.new(0, 295, 0, 323)
 
 UICorner.Parent = Main
@@ -103,27 +98,28 @@ Tab1.ScrollBarThickness = 5
 
 UICorner_4.Parent = Tab1
 
-Button1.Name = "Button1"
-Button1.Parent = Tab1
-Button1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button1.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button1.BorderSizePixel = 3
-Button1.Size = UDim2.new(0, 295, 0, 30)
-Button1.Font = Enum.Font.Arial
-Button1.Text = "Owl Hub"
-Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button1.TextSize = 20.000
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Tab1
+OwlHub.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+OwlHub.BorderColor3 = Color3.fromRGB(29, 29, 29)
+OwlHub.BorderSizePixel = 3
+OwlHub.Size = UDim2.new(0, 295, 0, 30)
+OwlHub.Font = Enum.Font.Arial
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.TextSize = 20.000
 
-Button2.Name = "Button2"
-Button2.Parent = Tab1
-Button2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button2.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button2.BorderSizePixel = 3
-Button2.Position = UDim2.new(0, 0, 0.046439629, 0)
-Button2.Size = UDim2.new(0, 295, 0, 30)
-Button2.Font = Enum.Font.Arial
-Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button2.TextSize = 20.000
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = Tab1
+Arsenal.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Arsenal.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Arsenal.BorderSizePixel = 3
+Arsenal.Position = UDim2.new(0, 0, 0.046439629, 0)
+Arsenal.Size = UDim2.new(0, 295, 0, 30)
+Arsenal.Font = Enum.Font.Arial
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextSize = 20.000
 
 Tab2.Name = "Tab2"
 Tab2.Parent = Main
@@ -137,26 +133,28 @@ Tab2.ScrollBarThickness = 5
 
 UICorner_5.Parent = Tab2
 
-Button1_2.Name = "Button1"
-Button1_2.Parent = Tab2
-Button1_2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button1_2.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button1_2.BorderSizePixel = 3
-Button1_2.Size = UDim2.new(0, 295, 0, 30)
-Button1_2.Font = Enum.Font.Arial
-Button1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button1_2.TextSize = 20.000
+BreakingPoint.Name = "Breaking Point"
+BreakingPoint.Parent = Tab2
+BreakingPoint.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+BreakingPoint.BorderColor3 = Color3.fromRGB(29, 29, 29)
+BreakingPoint.BorderSizePixel = 3
+BreakingPoint.Size = UDim2.new(0, 295, 0, 30)
+BreakingPoint.Font = Enum.Font.Arial
+BreakingPoint.Text = "BreakingPoint"
+BreakingPoint.TextColor3 = Color3.fromRGB(255, 255, 255)
+BreakingPoint.TextSize = 20.000
 
-Button2_2.Name = "Button2"
-Button2_2.Parent = Tab2
-Button2_2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button2_2.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button2_2.BorderSizePixel = 3
-Button2_2.Position = UDim2.new(0, 0, 0.046439629, 0)
-Button2_2.Size = UDim2.new(0, 295, 0, 30)
-Button2_2.Font = Enum.Font.Arial
-Button2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button2_2.TextSize = 20.000
+Entrenched.Name = "Entrenched"
+Entrenched.Parent = Tab2
+Entrenched.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Entrenched.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Entrenched.BorderSizePixel = 3
+Entrenched.Position = UDim2.new(0, 0, 0.046439629, 0)
+Entrenched.Size = UDim2.new(0, 295, 0, 30)
+Entrenched.Font = Enum.Font.Arial
+Entrenched.Text = "Entrenched"
+Entrenched.TextColor3 = Color3.fromRGB(255, 255, 255)
+Entrenched.TextSize = 20.000
 
 Tab3.Name = "Tab3"
 Tab3.Parent = Main
@@ -170,30 +168,32 @@ Tab3.ScrollBarThickness = 5
 
 UICorner_6.Parent = Tab3
 
-Button1_3.Name = "Button1"
-Button1_3.Parent = Tab3
-Button1_3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button1_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button1_3.BorderSizePixel = 3
-Button1_3.Size = UDim2.new(0, 295, 0, 30)
-Button1_3.Font = Enum.Font.Arial
-Button1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button1_3.TextSize = 20.000
+Troll1.Name = "Troll 1"
+Troll1.Parent = Tab3
+Troll1.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Troll1.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Troll1.BorderSizePixel = 3
+Troll1.Size = UDim2.new(0, 295, 0, 30)
+Troll1.Font = Enum.Font.Arial
+Troll1.Text = "Troll 1"
+Troll1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Troll1.TextSize = 20.000
 
-Button2_3.Name = "Button2"
-Button2_3.Parent = Tab3
-Button2_3.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
-Button2_3.BorderColor3 = Color3.fromRGB(29, 29, 29)
-Button2_3.BorderSizePixel = 3
-Button2_3.Position = UDim2.new(0, 0, 0.046439629, 0)
-Button2_3.Size = UDim2.new(0, 295, 0, 30)
-Button2_3.Font = Enum.Font.Arial
-Button2_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button2_3.TextSize = 20.000
+Troll2.Name = "Troll 2"
+Troll2.Parent = Tab3
+Troll2.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+Troll2.BorderColor3 = Color3.fromRGB(29, 29, 29)
+Troll2.BorderSizePixel = 3
+Troll2.Position = UDim2.new(0, 0, 0.046439629, 0)
+Troll2.Size = UDim2.new(0, 295, 0, 30)
+Troll2.Font = Enum.Font.Arial
+Troll2.Text = "Troll 2"
+Troll2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Troll2.TextSize = 20.000
 
 -- Scripts:
 
-local function CMYLJFY_fake_script() -- filter_1.LocalScript 
+local function YTSI_fake_script() -- filter_1.LocalScript 
 	local script = Instance.new('LocalScript', filter_1)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -202,8 +202,8 @@ local function CMYLJFY_fake_script() -- filter_1.LocalScript
 		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = false
 	end)
 end
-coroutine.wrap(CMYLJFY_fake_script)()
-local function PLKKP_fake_script() -- filter_2.LocalScript 
+coroutine.wrap(YTSI_fake_script)()
+local function OKYGIY_fake_script() -- filter_2.LocalScript 
 	local script = Instance.new('LocalScript', filter_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -212,8 +212,8 @@ local function PLKKP_fake_script() -- filter_2.LocalScript
 		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = false
 	end)
 end
-coroutine.wrap(PLKKP_fake_script)()
-local function CEGHEL_fake_script() -- filter_3.LocalScript 
+coroutine.wrap(OKYGIY_fake_script)()
+local function SPJWQ_fake_script() -- filter_3.LocalScript 
 	local script = Instance.new('LocalScript', filter_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -222,8 +222,25 @@ local function CEGHEL_fake_script() -- filter_3.LocalScript
 		script.Parent.Parent.Parent.Parent.Main.Tab3.Visible = true
 	end)
 end
-coroutine.wrap(CEGHEL_fake_script)()
-local function EHPZED_fake_script() -- Main.Drag 
+coroutine.wrap(SPJWQ_fake_script)()
+local function BBTV_fake_script() -- Top.LocalScript 
+	local script = Instance.new('LocalScript', Top)
+
+	local TweenService = game:GetService('TweenService')
+	local object = script.Parent
+	local tweenInfo = TweenInfo.new(2.5)
+	
+	while true do
+		local r, g, b = math.random(), math.random(), math.random()
+		local goal = {Color = BakckgroundColor3.new(r, g, b)}
+	
+		local tween = TweenService:Create(object, tweenInfo, goal)
+		tween:Play()
+		tween.Completed:Wait()
+	end
+end
+coroutine.wrap(BBTV_fake_script)()
+local function MOQD_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -261,8 +278,8 @@ local function EHPZED_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(EHPZED_fake_script)()
-local function COKF_fake_script() -- Main.KeyBlind 
+coroutine.wrap(MOQD_fake_script)()
+local function FHVXC_fake_script() -- Main.KeyBlind 
 	local script = Instance.new('LocalScript', Main)
 
 	local MainFrame = script.Parent.Parent.Main
@@ -284,52 +301,52 @@ local function COKF_fake_script() -- Main.KeyBlind
 		end
 	end)
 end
-coroutine.wrap(COKF_fake_script)()
-local function UOHC_fake_script() -- Button1.LocalScript 
-	local script = Instance.new('LocalScript', Button1)
+coroutine.wrap(FHVXC_fake_script)()
+local function CALN_fake_script() -- OwlHub.LocalScript 
+	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt", true))()
 	end)
 end
-coroutine.wrap(UOHC_fake_script)()
-local function IUGD_fake_script() -- Button2.LocalScript 
-	local script = Instance.new('LocalScript', Button2)
+coroutine.wrap(CALN_fake_script)()
+local function KNVKHJJ_fake_script() -- Arsenal.LocalScript 
+	local script = Instance.new('LocalScript', Arsenal)
 
 	script.Parent.MouseButton1Down:Connect(function()
-	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucitrash-vCoder/1/main/newrobloxscriptsarsenal1", true))()
 	end)
 end
-coroutine.wrap(IUGD_fake_script)()
-local function GOTKXU_fake_script() -- Button1_2.LocalScript 
-	local script = Instance.new('LocalScript', Button1_2)
+coroutine.wrap(KNVKHJJ_fake_script)()
+local function AQABMCO_fake_script() -- BreakingPoint.LocalScript 
+	local script = Instance.new('LocalScript', BreakingPoint)
 
 	script.Parent.MouseButton1Down:Connect(function()
-	
+		loadstring(game:GetObjects("rbxassetid://7228968882")[1].Source)()
 	end)
 end
-coroutine.wrap(GOTKXU_fake_script)()
-local function JMFKK_fake_script() -- Button2_2.LocalScript 
-	local script = Instance.new('LocalScript', Button2_2)
+coroutine.wrap(AQABMCO_fake_script)()
+local function BNAEXIW_fake_script() -- Entrenched.LocalScript 
+	local script = Instance.new('LocalScript', Entrenched)
 
 	script.Parent.MouseButton1Down:Connect(function()
-	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
 	end)
 end
-coroutine.wrap(JMFKK_fake_script)()
-local function RNJTD_fake_script() -- Button1_3.LocalScript 
-	local script = Instance.new('LocalScript', Button1_3)
+coroutine.wrap(BNAEXIW_fake_script)()
+local function WKJP_fake_script() -- Troll1.LocalScript 
+	local script = Instance.new('LocalScript', Troll1)
 
 	script.Parent.MouseButton1Down:Connect(function()
-	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hyperspacetreasure/Sad-X/main/Troll%201", true))()
 	end)
 end
-coroutine.wrap(RNJTD_fake_script)()
-local function NGGMVYK_fake_script() -- Button2_3.LocalScript 
-	local script = Instance.new('LocalScript', Button2_3)
+coroutine.wrap(WKJP_fake_script)()
+local function BDOI_fake_script() -- Troll2.LocalScript 
+	local script = Instance.new('LocalScript', Troll2)
 
 	script.Parent.MouseButton1Down:Connect(function()
-	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hyperspacetreasure/Sad-X/main/Troll%202", true))()
 	end)
 end
-coroutine.wrap(NGGMVYK_fake_script)()
+coroutine.wrap(BDOI_fake_script)()
